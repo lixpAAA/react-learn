@@ -11,5 +11,15 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: 'src/index.html'
 		})
-	]
+	],
+	module: { // 所有第三方，配置规则
+		rules: [
+			{
+				test: /\.js|jsx$/,
+				use: 'babel-loader',
+				exclude: /node_modules/
+			}
+		]
+
+	}
 }
