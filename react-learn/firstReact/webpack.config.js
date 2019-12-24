@@ -7,6 +7,9 @@ module.exports = {
 		host: 'localhost',
 		port: '8081'
 	},
+	resolve: {
+		extensions: ['.js', '.jsx']
+	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'src/index.html'
@@ -18,6 +21,14 @@ module.exports = {
 				test: /\.js|jsx$/,
 				use: 'babel-loader',
 				exclude: /node_modules/
+			},
+			{
+				test: /\.css$/,
+				use: ['style-loader', {
+					loader: 'css-loader?modules',
+					options: {
+					}
+				}]
 			}
 		]
 
