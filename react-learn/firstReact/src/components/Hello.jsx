@@ -7,8 +7,10 @@ class Hello extends React.Component {
   }
 
   render() {
+
     return <p>"this is a test "{this.props.user.age}</p>
   }
 
 }
+// hello 组件
 export default Hello
