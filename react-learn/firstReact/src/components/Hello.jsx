@@ -12,5 +12,5 @@ class Hello extends React.Component {
   }
 
 }
-// hello 组件
+// Hello 组件
 export default Hello
