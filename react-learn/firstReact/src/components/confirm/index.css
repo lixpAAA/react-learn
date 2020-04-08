@@ -1,0 +1,45 @@
+.confirm-contianer{
+  border-color: rgb(167, 167, 167);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0 1px 1px rgb(218, 216, 216);
+  padding: 10px 20px;
+}
+.confirm-contianer p{
+  color: black
+}
+
+.confirm-header{
+  margin: 0;
+
+}
+.confirm-footer{
+  border-color: transparent;
+   border-top-color: rgb(199, 195, 195);
+   border-top-width: 1px;
+   border-style: solid;
+
+   padding-top:5px;
+}
+.confirm-footer::after{
+  clear: both;
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+.confirm-button{
+  float: right;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 2px;
+  background: dodgerblue;
+  color: aliceblue;
+  border: none;
+  line-height: 20px;
+}
+.confirm-button:active{
+  background: rgb(94, 168, 241);
+}
