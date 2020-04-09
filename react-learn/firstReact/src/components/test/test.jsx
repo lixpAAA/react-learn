@@ -8,6 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        12121212112
         {/* <button onClick={() => {
           let res = await Confirm1()
           if (res) {
@@ -22,7 +23,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    let res = await Confirm()
+    let res = await Confirm({ onConfirm: () => { console.log('确定') } })
     if (res) {
       console.log('shi')
     } else {
